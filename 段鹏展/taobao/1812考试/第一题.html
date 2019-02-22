@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一题</title>
+    <link rel="stylesheet" href="scss/第一题.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css">
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .swiper-slide {
+            /* text-align: center; */
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+           
+        }
+
+        .swiper-slide img {
+            width: 350px;
+            height: 150px;
+            background-size: cover;
+            position: absolute;
+            left: 19px;
+            top: 28px;
+        }
+        .swiper-button-next{
+            width: 26px;
+            height: 61px;
+            color: #ffffff;
+            background: #cccccc;
+            opacity: 0.8;
+            font-size: 36px;
+            line-height: 61px;
+            position: absolute;
+            right: 0px;
+            top: 195px;
+        }
+        .swiper-button-prev{
+            width: 26px;
+            height: 61px;
+            background: #cccccc;
+            opacity: 0.8;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 61px;
+            position: absolute;
+            left: 0px;
+            top: 195px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="header">
+            <strong></strong>
+            <span>必抢清单</span>
+            <i>更多<a href="#">></a></i>
+        </div>
+        <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/12.jpg" alt="">
+                        <div class="cont">
+                            <p>奔跑在绿茵场,防滑球鞋脚上穿</p>
+                            <span>不少电视前的球迷,都希望自己可以亲自站在绿茵场上踢<br>两脚。但是没有专业的球鞋可是十分危险的，球场上那...</span>
+                        </div>
+                        <!-- <div class="image">
+                            <img src="img/4.jpg" alt="">
+                            <img src="img/5.jpg" alt="">
+                            <img src="img/3.jpg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="swiper-slide"><img src="img/1.jpg" alt="">
+                        <div class="cont">
+                                <p>便携摄影无人机,代替眼睛看世界</p>
+                                <span>世界很大你想出去看看，那么有一样东西不可不带，那<br>就是无人机。灵活小巧的机身可长时间在空中停留，智...</span>
+                            </div>
+                        </div>
+                    <div class="swiper-slide"><img src="img/11.jpg" alt="">
+                        <div class="cont">
+                                <p>玩转时装潮流，卫衣穿出型男气质</p>
+                                <span>对于时尚潮人来说，卫衣之间的叠穿一直是潮人的经典搭<br>配，卫衣很容易的就能穿出休闲的街头风，在颜色上尽...</span>
+                            </div>
+                        </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">></div>
+                <div class="swiper-button-prev"><</div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
